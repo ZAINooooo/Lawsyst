@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_back_reg"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@null"-->
+            <!--android:padding="10dp"-->
+            <!--app:srcCompat="@drawable/back" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_register_user_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+               android:layout_marginTop="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/defult_user" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/dpinner2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/country_arrays"
+                android:layout_gravity="center"
+                android:background="@drawable/square_editbox">
+            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+
+            <EditText
+                android:id="@+id/et_register_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/square_editbox"
+                android:drawablePadding="10dp"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/et_register_your_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/square_editbox"
+                android:drawablePadding="10dp"
+                android:hint="Last Name"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/password_lay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_editbox"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+
+
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/dpinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_gravity="center"
+                    android:background="@drawable/square_editbox">
+
+                </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_register_your_password"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="0.8"-->
+                    <!--android:background="@null"-->
+                    <!--android:hint="Login Password"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/vis_pass"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="0.2"-->
+                    <!--android:background="@null"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:src="@mipmap/eye"-->
+                    <!--android:visibility="gone" />-->
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/radioGroup"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:buttonTint="@color/circle_color"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1">-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/btn_male"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:buttonTint="@color/circle_color"-->
+                    <!--android:checked="true"-->
+                    <!--android:text="@string/txt_male"-->
+                    <!--android:textSize="12sp" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/btn_female"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:buttonTint="@color/circle_color"-->
+                    <!--android:text="@string/txt_female"-->
+                    <!--android:textSize="12sp" />-->
+
+
+            <!--</RadioGroup>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1.5">
+
+                <Spinner
+                    android:id="@+id/dpinner09"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/square_editbox"/>
+
+                <EditText
+                    android:id="@+id/et_register_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/square_editbox"
+                    android:drawablePadding="10dp"
+                    android:hint="Mobile Number"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1.5">
+
+                <Spinner
+                    android:id="@+id/dpinner19"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/square_editbox"/>
+
+                <EditText
+                    android:id="@+id/et_register_phone2"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/square_editbox"
+                    android:drawablePadding="10dp"
+                    android:hint="Land Line Number"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_register_your_email2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/square_editbox"
+                android:drawablePadding="10dp"
+                android:hint="VIOP Number"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:id="@+id/et_register_your_email3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/square_editbox"
+                android:drawablePadding="10dp"
+                android:hint="Skype ID"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+
+
+            <EditText
+                android:id="@+id/et_register_your_email4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/square_editbox"
+                android:drawablePadding="10dp"
+                android:hint="Chat Server"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+
+
+            <EditText
+                android:id="@+id/et_register_your_email5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/square_editbox"
+                android:drawablePadding="10dp"
+                android:hint="Chat Group"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:id="@+id/et_register_your_email6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/square_editbox"
+                android:drawablePadding="10dp"
+                android:hint="Description"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Select Country"-->
+                <!--android:textColor="#696969"-->
+                <!--android:textSize="13sp"-->
+                <!--android:visibility="gone"/>-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/sp_country_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:visibility="gone"-->
+                <!--android:background="@drawable/square_editbox">-->
+
+            <!--</Spinner>-->
+
+            <!--<com.app4cab.driver.recent.customText.CustomRegularTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="@string/txt_select_currency"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="@color/deep_grey"-->
+                <!--android:textSize="13sp" />-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/sp_curency_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:visibility="gone"-->
+                <!--android:background="@drawable/square_editbox">-->
+
+            <!--</Spinner>-->
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Select Service"-->
+                <!--android:textColor="#696969"-->
+                <!--android:textSize="13sp" />-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/sp_type_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/square_editbox">-->
+
+            <!--</Spinner>-->
+
+
+            <EditText
+                android:id="@+id/rigister_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="8dp"
+                android:shadowDy="0"
+                android:text="Update Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+

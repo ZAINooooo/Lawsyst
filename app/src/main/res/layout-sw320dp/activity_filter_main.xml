@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMatter"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToggle"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter Matter"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/back" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true">
+
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/mkmn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mkj"
+                    android:layout_marginLeft="35.0dip"
+                    android:text="Start Date"
+                    android:textColor="@color/pure_black"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/days_leave4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/mkmn4"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:hint="2019-11-11"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/mkmn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/days_leave4"
+                    android:layout_marginLeft="35.0dip"
+                    android:text="End Date"
+                    android:textColor="@color/pure_black"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/days_leave5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/mkmn5"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:hint="2019-11-11"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:id="@+id/ddd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/days_leave5"
+                    android:text="Status"
+                    android:textColor="@android:color/black"
+                    android:textSize="22dp"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:id="@+id/dddss"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6px"
+                    android:layout_below="@id/ddd"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="visible" />
+
+
+
+
+                <TextView
+                    android:id="@+id/km326"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/dddss"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Status" />
+
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spLeaveSubject436"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/km326"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg"/>
+
+
+                <TextView
+                    android:id="@+id/ddd7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/spLeaveSubject436"
+                    android:text="Staff"
+                    android:textColor="@android:color/black"
+                    android:textSize="22dp"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:id="@+id/dddss7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6px"
+                    android:layout_below="@id/ddd7"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="visible" />
+
+
+
+                <TextView
+                    android:id="@+id/km3267"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/dddss7"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Staff" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spLeaveSubject4367"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/dddss7"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/ddd78"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/spLeaveSubject4367"
+                    android:text="Bill To"
+                    android:textColor="@android:color/black"
+                    android:textSize="22dp"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:id="@+id/dddss78"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6px"
+                    android:layout_below="@id/ddd78"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="visible" />
+
+
+
+                <TextView
+                    android:id="@+id/km32678"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/dddss78"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Bill" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spLeaveSubject43678"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/km32678"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg"/>
+
+
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/ddd789"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/spLeaveSubject43678"
+                    android:text="Law Type"
+                    android:textColor="@android:color/black"
+                    android:textSize="22dp"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:id="@+id/dddss789"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6px"
+                    android:layout_below="@id/ddd789"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="visible" />
+
+
+
+                <TextView
+                    android:id="@+id/km326789"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/dddss789"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Law" />
+
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spLeaveSubject436789"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/km326789"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg"/>
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/ddd780"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/spLeaveSubject436789"
+                    android:text="Case Type"
+                    android:textColor="@android:color/black"
+                    android:textSize="22dp"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:id="@+id/dddss780"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6px"
+                    android:layout_below="@id/ddd780"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="visible" />
+
+
+
+                <TextView
+                    android:id="@+id/km326780"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/dddss780"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Case Type" />
+
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spLeaveSubject436780"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/km326780"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg"/>
+
+
+
+
+                <Button
+                    android:id="@+id/filter_btn"
+                    android:layout_width="200sp"
+                    android:layout_below="@id/spLeaveSubject436780"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorToggle"
+                    android:text="Filter"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

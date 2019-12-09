@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="5dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_main"
+            layout="@layout/toolbar_main" />
+
+
+
+        <!--<LinearLayout-->
+
+            <!--android:id="@+id/llayout2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.4"-->
+                <!--android:paddingRight="5dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvLatitude"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:background="#000000"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="Latitude "-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="14dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvLongitude"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/tvLatitude"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:background="#000000"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="Longitude"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="14dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvInternetStatus"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/tvLongitude"-->
+                    <!--android:background="#000000"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="Internet Status"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="14dp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.4">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvTrackingCalls"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:background="#000000"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="Tracking Calls"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="14dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvCheckinCalls"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/tvTrackingCalls"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:background="#000000"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="Checkin Calls"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="14dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvGPSStatus"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/tvCheckinCalls"-->
+                    <!--android:background="#000000"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="GPS Status"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="14dp" />-->
+
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_MainContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <ImageView
+            android:id="@+id/drawer_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_drawer" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/meezan_logo" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navView_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/darkGreen"
+            android:theme="@style/NavigationTheme">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="600dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_click"
+                            android:layout_width="50dp"
+                            android:layout_toRightOf="@id/tv_navHeader_username"
+                            android:layout_marginLeft="100dp"
+                            android:layout_below="@id/user_code"
+                            android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/expand"
+                            android:layout_width="30dp"
+
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@mipmap/icon_down" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_click2"
+                            android:layout_width="35dp"
+android:visibility="gone"
+                            android:layout_marginLeft="100dp"
+                            android:layout_toRightOf="@id/tv_navHeader_username"
+                            android:layout_below="@id/user_code"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/expand2"
+                                android:layout_width="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@mipmap/icon_up" />
+
+                        </RelativeLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_navHeader"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/person_placeholder"
+                            app:civ_border_overlay="false"/>
+
+                        <TextView
+                            android:id="@+id/tv_navHeader_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/img_navHeader"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Syed Zubair Khan"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/user_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_navHeader_username"
+                            android:layout_toRightOf="@id/img_navHeader"
+                            android:layout_marginStart="2dp"
+                            android:text="Salesman - South"
+                            android:textColor="@color/gold"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </FrameLayout>
+
+                <ExpandableListView
+                    android:id="@+id/lvExp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_margin="12dp"
+                    android:paddingTop="10dp"
+                    android:groupIndicator="@null"
+                    />
+
+            </LinearLayout>
+
+        </android.support.design.widget.NavigationView>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

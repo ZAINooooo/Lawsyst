@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name" translatable="false">Lawsysts</string>
+
+
+    <string name="title_login" translatable="false">>LOGIN TO YOUR ACCOUNT</string>
+    <string name="email" translatable="false">Email Address</string>
+    <string name="sign_in" translatable="false">>SIGN IN</string>
+    <string name="no_parameters">Parameters are empty</string>
+    <string name="empty_user_server_object">User object from server is empty</string>
+    <string name="ifrs_quiz">IFRS QUIZ</string>
+    <string name="username">Email</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="screen_name">Screen Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="singleplayer">Single Player</string>
+    <string name="multiplayer">Multi Player</string>
+    <string name="start">Start</string>
+    <string name="points">Points</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="email_forgot_password">Please enter email address</string>
+    <string name="next">Next</string>
+    <string name="msg_choose_answer">Please Choose an Answer.</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="skip">Skip</string>
+    <string name="swipe_to_begin">SWIPE TO BEGIN</string>
+    <string name="training_for_professionals">TRAINING FOR PROFESSIONALS</string>
+    <string name="password">Password</string>
+    <string name="track_your_progress">Track your progress</string>
+    <string name="improve_your_skills">Improve your skills</string>
+    <string name="get_started">Get started</string>
+    <string name="already_a_member_sign_in">Already a member? Sign in</string>
+    <string name="loading">Loading...</string>
+    <string name="msg_invalid_password">Invalid Password. A Password must be at least 8 characters long, and requires at least one upper-case letter, one lower-case letter, one number and one special character. </string>
+    <string name="company">Company</string>
+    <string name="tournament">Tournament</string>
+    <string name="code">Code</string>
+    <string name="submit">Submit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="assessment">Assessment</string>
+    <string name="performance">Performance</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="progress_detail">Progress Detail</string>
+    <string name="settings">Settings</string>
+    <string name="quiz">Quiz</string>
+    <string name="desc">desc</string>
+    <string name="join_tournament_by_tapping_on_the_button">Join Tournament by tapping on the button</string>
+    <string name="start_quiz_by_tapping_on_the_button">Start quiz by tapping on the button</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="notifications">Notifications</string>
+    <string name="logout">Logout</string>
+    <string name="enter_access_code">Enter Access Code</string>
+    <string name="email_only">Email</string>
+    <string name="learn_to_excel">Learn To Excel</string>
+    <string name="proq">ProQ</string>
+    <string name="activities">Activities</string>
+    <string name="user_info">Fill Your Information</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save">Save</string>
+    <string name="access_code_wrong">Access code is wrong</string>
+    <string name="access_code_hint">Please enter access code</string>
+    <string name="fragment_headers">%1$s</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="hint_resource">+92</string>
+
+
+    <string-array name="country_arrays">
+        <item>Title</item>
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Ms</item>
+        <item>Mr</item>
+        <item>Dr</item>
+        <item>Lord</item>
+        <item>Reverand</item>
+        <item>Dame</item>
+    </string-array>
+
+
+    <string-array name="currency">
+        <item>USD</item>
+        <item>INR</item>
+    </string-array>
+    <string name="title_activity_matter_details">MatterDetails</string>
+    <string name="title_activity_matters__details">Matters_Details</string>
+    <string name="title_activity_matters__contacts">Matters_Contacts</string>
+    <string name="title_activity_matters__communication">Matters_Communication</string>
+    <string name="title_activity_matters__time__entries">Matters_Time_Entries</string>
+    <string name="title_activity_matters__bills">Matters_Bills</string>
+    <string name="title_activity_matters__invoices">Matters_Invoices</string>
+    <string name="title_activity_matters__ledger">Matters_Ledger</string>
+    <string name="title_activity_matters__tasks">Matters_Tasks</string>
+    <string name="title_activity_matters__notes">Matters_Notes</string>
+
+
+    <string name="font_bold">Montserrat-Bold.otf</string>
+    <string name="font_light">Montserrat-Light.otf</string>
+    <string name="font_light_Oblique">Montserrat-ExtraLight.otf</string>
+    <string name="font_itatlic">OpenSans-Italic.ttf</string>
+    <string name="font_bold_itatlic">OpenSans-BoldItalic.ttf</string>
+    <string name="font_medium">Montserrat-Medium.otf</string>
+    <string name="font_gothic">Montserrat-SemiBold.otf</string>
+
+    <string name="fontRegular">Montserrat-Medium.otf</string>
+
+</resources>

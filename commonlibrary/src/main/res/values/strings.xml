@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CommonLibrary</string>
+    <string name="fontRegular">Montserrat-Medium.otf</string>
+    <string name="font_bold">Montserrat-Bold.otf</string>
+    <string name="font_light">Montserrat-Light.otf</string>
+    <string name="font_light_Oblique">Montserrat-ExtraLight.otf</string>
+    <string name="font_itatlic">OpenSans-Italic.ttf</string>
+    <string name="font_bold_itatlic">OpenSans-BoldItalic.ttf</string>
+    <string name="font_medium">Montserrat-Medium.otf</string>
+    <string name="font_gothic">Montserrat-SemiBold.otf</string>
+    <string name="msgNetworkError">Network connectivity needed. Either wifi or mobile data plan</string>
+    <string name="no_gps">Please turn on GPS</string>
+    <string name="ok">OK</string>
+    <string name="locationpermission">LOCATION PERMISSION</string>
+    <string name="storagepermission">STORAGE PERMISSION</string>
+    <string name="permission_denied_writestorage">Without this permission the app is unable to download images. Are you sure you want to deny this permission?</string>
+    <string name="permission_denied_location">Without this permission the app is unable to track your location. Are you sure you want to deny this permission?</string>
+    <string name="retry">RETRY</string>
+    <string name="cancel1">Cancel</string>
+    <string name="permission_needed_writestorage">You have disabled the app to access your sdcard. You can grant this permission again from the app settings. Click [YES] to proceed.</string>
+    <string name="permission_needed_location">You have disabled the app to access your location. You can grant this permission again from the app settings. Click [YES] to proceed.</string>
+    <string name="yes">YES</string>
+    <string name="email_error">Please enter email address</string>
+    <string name="email_validation_error">Please enter valid email address</string>
+    <string name="password_error">Please enter password</string>
+    <string name="empty_user_server_object">User object from server is empty</string>
+    <string name="invalid_response">Invalid response from server.</string>
+    <string name="msg_connection_timeout">Failed to connect with server. Please try again later.</string>
+    <string name="select_photo">Select Your Photo</string>
+</resources>

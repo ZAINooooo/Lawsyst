@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="app">
+        <attr name="customFont" format="string" />
+        <attr name="posX" format="integer"></attr>
+        <attr name="posY" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="AnalogClock">
+        <attr name="dial" format="reference"/>
+        <attr name="hand_hour" format="reference"/>
+        <attr name="hand_minute" format="reference"/>
+    </declare-styleable>
+
+
+
+
+
+
+
+
+
+    <declare-styleable name="TextView">
+        <attr name="ctypeface" format="string"/>
+        <attr name="cbold" format="boolean"/>
+        <attr name="isBold" format="boolean"/>
+        <attr name="isLight" format="boolean"/>
+        <attr name="isMedium" format="boolean"/>
+        <attr name="isGothic" format="boolean"/>
+        <attr name="isItalic" format="boolean"/>
+        <attr name="isItalicOblique" format="boolean"/>
+    </declare-styleable>
+
+
+
+
+
+</resources>
+

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10sp"
+    android:id="@+id/cardview1"
+    android:layout_marginTop="8sp"
+    android:layout_marginEnd="10sp"
+    android:elevation="5sp"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/mattername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="13dp"
+                android:fontFamily="sans-serif"
+                android:text="Matter Name : "
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="13dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Time Entry Status : "
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="13dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Hourly Rate : "
+                        />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="13dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Resource : "
+                        />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="13dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Bill Reference Number : "
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/time_entry_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="186"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/hourly_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CD70"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/resource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="17"
+                        android:text="20-10-2018"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/bill_ref"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Synced"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:layout_marginTop="12sp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/delete_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="@null"-->
+                <!--android:padding="5sp"-->
+                <!--android:src="@drawable/baseline_delete_outline_black_36"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/edit_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="@null"-->
+                <!--android:padding="5sp"-->
+                <!--android:src="@drawable/baseline_edit_black_36"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--&lt;!&ndash;<ImageButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/close_tv"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@null"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="5sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/baseline_close_black_36"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#934E4E"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="14sp" />&ndash;&gt;-->
+
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<ListView-->
+    <!--android:id = "@+id/listview"-->
+    <!--android:layout_width = "match_parent"-->
+    <!--android:layout_height = "wrap_content"-->
+    <!--android:divider = "@null"/>-->
+
+
+
+
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_not_applicable"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="20dp"-->
+    <!--android:textStyle="italic"-->
+    <!--android:text="Not Applicable"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_gravity="center"/>-->
+
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:layout_marginRight="3dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:elevation="2dp"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_container1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="6dp"-->
+    <!--android:paddingBottom="6dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_amin"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="Matter Name"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="2dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#9f9f9f" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/mattername"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="PPC"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="italic" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:layout_marginRight="3dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:elevation="2dp"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_container2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="6dp"-->
+    <!--android:paddingBottom="6dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_car_ijarah"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="Client"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="2dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="#9f9f9f" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/client"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="SSS"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="italic" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:layout_marginRight="3dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:elevation="2dp"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_container3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="6dp"-->
+    <!--android:paddingBottom="6dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_house_finance"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.98"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="Assign To"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="2dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="#9f9f9f" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/assignto"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="SS"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="italic" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:layout_marginRight="3dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:elevation="2dp"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_container4"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="6dp"-->
+    <!--android:paddingBottom="6dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_consumer_ease"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="Status"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="2dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:background="#9f9f9f" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/STATUS"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="CCDCD"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="italic" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:layout_marginRight="3dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:elevation="2dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_container5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="6dp"-->
+    <!--android:paddingBottom="6dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_kafala"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="Matter Number"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="2dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#9f9f9f" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/matternumber"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="CDCDD"-->
+    <!--android:textSize="13dp"-->
+    <!--android:textStyle="italic" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+    <!--</FrameLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="88dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="16dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/STATUS"-->
+    <!--android:textAlignment="center"-->
+    <!--android:layout_width="46dp"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@drawable/status_background"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="16sp" />-->
+    <!--<LinearLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="6dp"-->
+    <!--&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/matternumber"-->
+    <!--android:textSize="10dp"-->
+    <!--android:textColor="#717171"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/mattername"-->
+    <!--android:textSize="16dp"-->
+    <!--android:textColor="#232323"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/statusdescription"-->
+    <!--android:textSize="14dp"-->
+    <!--android:textColor="#787878"/>-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->

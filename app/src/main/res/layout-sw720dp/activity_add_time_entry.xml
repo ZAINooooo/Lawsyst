@@ -1,0 +1,1651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMatter"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToggle"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Time Entry"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/back" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true">
+
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="405dp">-->
+
+
+            <!--<LinearLayout-->
+            <!--android:background="@drawable/gradientbackground"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/imag_view"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_height="150dp"-->
+            <!--app:civ_border_overlay="false"-->
+            <!--android:src="@drawable/place_holder"/>-->
+
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/username"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Zain Kalim"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textStyle="normal"-->
+            <!--android:textSize="25sp"/>-->
+
+
+
+
+
+            <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Kafalah Calculator"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="normal" />-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Staff" />
+
+                <Spinner
+                    android:id="@+id/spLeaveSubject2"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:layout_marginRight="30.0dip" />
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/km2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/spLeaveSubject2"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Work Type" />
+
+                <Spinner
+                    android:id="@+id/spLeaveSubject3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/km2"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg" />
+
+
+
+
+                <TextView
+                    android:id="@+id/km3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/spLeaveSubject3"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="What task was performed?" />
+
+                <Spinner
+                    android:id="@+id/spLeaveSubject4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/km3"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg" />
+
+
+
+
+                <TextView
+                    android:id="@+id/km338"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/spLeaveSubject4"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Rate Type" />
+
+                <Spinner
+                    android:id="@+id/spLeaveSubject487"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@id/km338"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_bg" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/km3389"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/spLeaveSubject487"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Date" />
+
+                <EditText
+                    android:id="@+id/days_leave"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:layout_below="@id/km3389"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip" />
+
+
+
+
+                <TextView
+                    android:id="@+id/km33890"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/days_leave"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Duration (minutes)" />
+
+                <EditText
+                    android:id="@+id/days_leave2"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_below="@id/km33890"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip" />
+
+
+                <TextView
+                    android:id="@+id/km33891"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/km33890"
+                    android:layout_marginTop="31dp"
+                    android:layout_toRightOf="@id/days_leave2"
+                    android:text="0"
+                    android:textColor="@color/pure_black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/km3389123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/km33890"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_toRightOf="@id/km33891"
+                    android:text="hours"
+                    android:textColor="@color/pure_black"
+                    android:textStyle="bold" />
+
+
+                <!--<View-->
+                <!--android:id="@+id/mk"-->
+                <!--android:layout_width="177dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_below="@id/days_leave2"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:visibility="visible" />-->
+
+
+                <View
+                    android:id="@+id/my_view"
+                    android:layout_width="2dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/days_leave"
+                    android:layout_marginLeft="70dp"
+                    android:layout_toRightOf="@id/km33891"
+                    android:background="@color/colorPrimary" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/km338912"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/km33890"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/my_view"
+                    android:text="Units"
+                    android:textColor="@color/pure_black"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/days_leave3"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/km33890"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/km338912"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textStyle="normal" />
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/calculate_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/days_leave3"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Calculate Legal Aid Bill"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/km338905"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/calculate_btn"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Net Amount" />
+
+
+                <EditText
+                    android:id="@+id/days_leave23"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:layout_below="@id/km338905"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/cbx_serveform_selectionbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calculate_btn"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@id/days_leave23"
+                    android:textStyle="bold"
+                    android:theme="@style/CustomCheckBox" />
+
+
+                <EditText
+                    android:id="@+id/days_leave32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/calculate_btn"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/cbx_serveform_selectionbox"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="normal" />
+
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/km3389056"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_below="@id/days_leave32"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Tax Amount" />
+
+
+                <EditText
+                    android:id="@+id/days_leave235"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:layout_below="@id/km3389056"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="30.0dip" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/km33890566"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/days_leave32"
+                    android:layout_toRightOf="@id/days_leave235"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Total" />
+
+
+
+
+                <EditText
+                    android:id="@+id/days_leave2356"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/km3389056"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/cbx_serveform_selectionbox"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="normal" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/km338905664"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/days_leave2356"
+                    android:textStyle="bold"
+                    android:textColor="@color/pure_black"
+                    android:text="Memo" />
+
+
+
+
+                <EditText
+                    android:gravity="top"
+                    android:id="@+id/reason"
+                    android:background="@drawable/cust_border_white_radius_10_withborder"
+                    android:padding="10.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_below="@id/km338905664"
+                    android:minLines="5" android:imeOptions="actionDone" />
+
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/njm"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@id/reason"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <!--<CheckBox-->
+                    <!--android:id="@+id/cbx_serveform_selectionbox"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:padding="13dip"-->
+                    <!--android:text="Full Day" />-->
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:theme="@style/CustomCheckBox"
+                        android:id="@+id/cbx_serveform_selectionbox2222"
+                        android:layout_width="wrap_content"
+                        android:text="Billable"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:textStyle="normal"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:theme="@style/CustomCheckBox"
+                        android:id="@+id/cbx_serveform_selectionbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toRightOf="@id/cbx_serveform_selectionbox2222"
+                        android:text="Create Att. Notes"
+                        android:textStyle="normal"
+                        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/calculate_btn22"
+                    android:layout_width="200dp"
+                    android:layout_below="@id/njm"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave2356"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_marginLeft="29dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/km3389056"-->
+                <!--android:layout_toRightOf="@id/days_leave235"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/km33890567"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_toRightOf="@id/days_leave235"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Total" />-->
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave322"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_below="@id/calculate_btn"-->
+                <!--android:layout_marginLeft="29dp"-->
+                <!--android:layout_marginTop="29dp"-->
+                <!--android:layout_marginRight="30.0dip"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_toRightOf="@id/km3389056"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textStyle="normal" />-->
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/matter_text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:inputType="text"-->
+                <!--android:layout_below="@id/spLeaveSubject4"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="Matter Details"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="22dp"-->
+                <!--android:textStyle="normal" />-->
+
+
+                <!--<View-->
+                <!--android:id="@+id/mk"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="6px"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@id/matter_text"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:visibility="visible" />-->
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/mk"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Matter Name" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Notes" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave2"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn2"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave2"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Reference" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave3"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn3"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/rf"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:inputType="text"-->
+                <!--android:layout_below="@id/days_leave3"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="Dates"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="22dp"-->
+                <!--android:textStyle="normal" />-->
+
+
+                <!--<View-->
+                <!--android:id="@+id/mkj"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="6px"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_below="@id/rf"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:visibility="visible" />-->
+
+
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/mkj"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Open Date" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave4"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:hint="2019-11-11"-->
+                <!--android:layout_below="@id/mkmn4"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave4"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Closed Date" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave5"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:hint="2019-11-11"-->
+                <!--android:layout_below="@id/mkmn5"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/ddd"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:inputType="text"-->
+                <!--android:singleLine="true"-->
+                <!--android:layout_below="@id/days_leave5"-->
+                <!--android:text="Fee Strcuture"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="22dp"-->
+                <!--android:textStyle="normal" />-->
+
+
+                <!--<View-->
+                <!--android:id="@+id/dddss"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="6px"-->
+                <!--android:layout_below="@id/ddd"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:visibility="visible" />-->
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/km33"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/dddss"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Bill To" />-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spLeaveSubject44"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50.0dip"-->
+                <!--android:layout_below="@id/km33"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@drawable/spinner_bg" />-->
+
+
+
+
+
+
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/njm"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_below="@id/spLeaveSubject44"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/cbx_serveform_selectionbox"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="13dip"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Full Day" />&ndash;&gt;-->
+
+
+                <!--<android.support.v7.widget.AppCompatCheckBox-->
+                <!--android:theme="@style/CustomCheckBox"-->
+                <!--android:id="@+id/cbx_serveform_selectionbox"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="Agreed Fee"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginEnd="3dp"-->
+                <!--android:layout_marginStart="3dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <!--<android.support.v7.widget.AppCompatCheckBox-->
+                <!--android:theme="@style/CustomCheckBox"-->
+                <!--android:id="@+id/cbx_serveform_selectionbox2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginEnd="3dp"-->
+                <!--android:layout_marginStart="3dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:layout_toRightOf="@id/cbx_serveform_selectionbox"-->
+                <!--android:text="Fixed Fee"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+
+                <!--<android.support.v7.widget.AppCompatCheckBox-->
+                <!--android:theme="@style/CustomCheckBox"-->
+                <!--android:id="@+id/cbx_serveform_selectionbox22"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginEnd="3dp"-->
+                <!--android:layout_marginStart="3dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:layout_below="@id/cbx_serveform_selectionbox2"-->
+                <!--android:text="Hourly Rate"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+                <!--<android.support.v7.widget.AppCompatCheckBox-->
+                <!--android:theme="@style/CustomCheckBox"-->
+                <!--android:id="@+id/cbx_serveform_selectionbox222"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginEnd="3dp"-->
+                <!--android:layout_marginStart="3dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:layout_below="@id/cbx_serveform_selectionbox2"-->
+                <!--android:layout_toRightOf="@id/cbx_serveform_selectionbox22"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Contigency Based"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+                <!--</RelativeLayout>-->
+
+
+
+
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/njm2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_below="@id/njm"-->
+
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/km333"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:visibility="gone"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="User" />-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spLeaveSubject4433"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50.0dip"-->
+                <!--android:layout_below="@id/km333"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@drawable/spinner_bg" />-->
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn46"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/spLeaveSubject4433"-->
+                <!--android:textStyle="normal"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Hourly Rate" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave46"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_below="@id/mkmn46"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn56"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave46"-->
+                <!--android:textStyle="normal"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Residue" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave56"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_below="@id/mkmn56"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn44"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave56"-->
+                <!--android:textStyle="normal"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Amount" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave44"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn44"-->
+                <!--android:visibility="gone"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn445"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_below="@id/days_leave44"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Residue" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave445"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn445"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn47"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave445"-->
+                <!--android:textStyle="normal"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Amount %" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave47"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn47"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn57"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave47"-->
+                <!--android:textStyle="normal"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Success" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave58"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_below="@id/mkmn57"-->
+                <!--android:textStyle="normal"-->
+                <!--android:hint="0.00"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn48"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_below="@id/days_leave58"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Demage" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave49"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn48"-->
+                <!--android:textStyle="normal"-->
+                <!--android:hint="0.00"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+
+                <!--</RelativeLayout>-->
+
+
+
+
+
+
+
+
+                <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/njm3"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_below="@id/njm"&ndash;&gt;-->
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center_horizontal"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+
+
+
+                <!--&lt;!&ndash;&ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+
+                <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkjs"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:inputType="text"-->
+                <!--android:singleLine="true"-->
+                <!--android:layout_below="@id/njm2"-->
+                <!--android:text="Assign To"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="22dp"-->
+                <!--android:textStyle="normal" />-->
+
+
+                <!--<View-->
+                <!--android:id="@+id/mki"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="6px"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_below="@id/mkjs"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:visibility="visible" />-->
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/km335"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/mki"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Assign To" />-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spLeaveSubject445"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50.0dip"-->
+                <!--android:layout_below="@id/km335"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@drawable/spinner_bg" />-->
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/km336"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/spLeaveSubject445"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Supervisor" />-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spLeaveSubject446"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50.0dip"-->
+                <!--android:layout_below="@id/km336"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@drawable/spinner_bg" />-->
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/mkmn43"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/spLeaveSubject446"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Tags" />-->
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/days_leave43"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_below="@id/mkmn43"-->
+                <!--android:textStyle="normal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/km326"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/days_leave43"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Status" />-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spLeaveSubject436"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50.0dip"-->
+                <!--android:layout_below="@id/km326"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@drawable/spinner_bg" />-->
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/ssm"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:inputType="text"-->
+                <!--android:singleLine="true"-->
+                <!--android:layout_below="@id/spLeaveSubject436"-->
+                <!--android:text="Branch Responsible"-->
+
+                <!--android:textSize="22dp"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:textStyle="normal" />-->
+
+
+                <!--<View-->
+                <!--android:id="@+id/ss"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="6px"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_below="@id/ssm"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:visibility="visible" />-->
+
+
+
+
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/km3262"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:layout_below="@id/ss"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/pure_black"-->
+                <!--android:text="Select Branch Responsible" />-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spLeaveSubject4362"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50.0dip"-->
+                <!--android:layout_below="@id/km3262"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@drawable/spinner_bg" />-->
+
+
+
+                <!--&lt;!&ndash;<Spinner&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/dpinner1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginStart="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="66dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@drawable/gradient"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingLeft="3dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:spinnerMode="dropdown"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@android:color/black"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="14sp" />&ndash;&gt;-->
+
+
+
+
+
+                <!--<Button-->
+                <!--android:id="@+id/calculate_btn"-->
+                <!--android:layout_width="170sp"-->
+                <!--android:layout_below="@id/spLeaveSubject4362"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorToggle"-->
+                <!--android:text="Update"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textStyle="normal" />-->
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
